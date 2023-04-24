@@ -49,4 +49,13 @@ const multiplyByNineFifths = (celsius) =>{
 const getFahranenhite=(celsius)=>{
     return multiplyByNineFifths (celsius)+32
 }
-console.log(`the temperature is ${getFahranenhite(15)}°C`)
+// console.log(`the temperature is ${getFahranenhite(15)}°C`)
+
+
+const takeAway = (fahranenheit) =>{
+    return fahranenheit -32
+}
+const getCelsius = (degree) =>{
+    return takeAway (degree)* 5/9
+}
+console.log(`the temperature is ${getCelsius(59)}°F`)
